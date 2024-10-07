@@ -47,7 +47,9 @@ margin-top: 0.5rem;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
 }
-
+ .cartao__conteudo p{
+    
+ }
 .cartao__conteudo__reposta{
     transform:rotateY(180grau);
 }
