@@ -48,9 +48,12 @@ margin-top: 0.5rem;
     transition: transform 300ms ease-in-out;
 }
 
+.cartao__conteudo__reposta{
+    transform:rotateY(180grau);
+}
 .cartao__conteudo__pergunta p{
 color: var(--text-color);
-font-weight: 500;
+font-weight: 700;
 }
 .cartao__conteudo__reposta p{
 color: var(--card-back-color);
