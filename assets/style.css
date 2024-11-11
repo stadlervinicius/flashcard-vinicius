@@ -1,11 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
 :root{
     --text-color:#DBE4EF;
-    --card-front-color: #144480;
-    --card-back-color: #00F4BF;
+    --card-front-color: #144480ff;
+    --card-back-color: #14e7f7;
 }
 
 body{
@@ -13,11 +11,13 @@ body{
     font-family:"Bai Jamjuree" ;
 }
 
-.cartao{
-    margin: 1rem 1rem; /*espaço externo 1rem p/ todos os lados*/
-    height: 20rem; /*altura elemento 20rem*/
-    flex-grow: 1; /*cresce os elementos de maneira uniforme*/
-    flex-basis: calc(
+#container{
+    display: flex; /*transforma em elemento flexível*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+}
 
 .cartao{
     margin: 1rem 1rem; /*espaço externo 1rem p/ todos os lados*/
@@ -68,14 +68,7 @@ body{
     /* Transformando a rotação no eixoY em 180graus*/
 }
 
-.cartao__conteudo__pergunta{
-    backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-}
+.cartao__conteudo__pergunta,
 .cartao__conteudo__resposta{
     backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
     position: absolute;
@@ -83,13 +76,6 @@ body{
     width: 100%;
 }
 
-.cartao__conteudo__resposta{
-    backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
-}
 .cartao__conteudo__resposta{
     transform: rotateY(180deg);
 }
@@ -112,4 +98,3 @@ footer p{
     font-size: 0.6rem;
     margin-top: 0.5rem;
 }
-
