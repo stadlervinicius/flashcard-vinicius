@@ -79,13 +79,18 @@ body{
 .cartao__conteudo__resposta{
     transform: rotateY(180deg);
 }
-
+.cartao__conteudo__resposta{
+    backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 
 
 
 
 footer {
-    background-color: black;
+    background-color: rgb(255, 136, 0);
     color: white;
     bottom:0;
     position:fixed;
